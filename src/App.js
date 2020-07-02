@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import { enquireScreen } from 'enquire-js';
-// import Header from './Home/Nav0';
+import { Header } from './components/Header';
 // import Footer from './Home/Footer0';
 import Home from './components/Home';
 
@@ -32,6 +32,7 @@ class App extends Component {
     return (
       <Router>
         <div>
+          <Header />
           {/* <Header dataSource={Nav00DataSource} isMobile={this.isMobile} /> */}
           <Route exact path="/" component={Home} />
           {/* <Footer dataSource={Footer00DataSource} isMobile={this.isMobile} /> */}
