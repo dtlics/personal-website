@@ -3,15 +3,9 @@
 import React from 'react';
 import { enquireScreen } from 'enquire-js';
 
-import Nav3 from './Nav3';
 import Banner2 from './Banner2';
-import Footer2 from './Footer2';
 
-import {
-  Nav30DataSource,
-  Banner20DataSource,
-  Footer20DataSource,
-} from './data.source';
+import { Banner21DataSource } from './data.source';
 import './less/antMotionStyle.less';
 
 let isMobile;
@@ -50,22 +44,10 @@ export default class Home extends React.Component {
 
   render() {
     const children = [
-      <Nav3
-        id="Nav3_0"
-        key="Nav3_0"
-        dataSource={Nav30DataSource}
-        isMobile={this.state.isMobile}
-      />,
       <Banner2
-        id="Banner2_0"
-        key="Banner2_0"
-        dataSource={Banner20DataSource}
-        isMobile={this.state.isMobile}
-      />,
-      <Footer2
-        id="Footer2_0"
-        key="Footer2_0"
-        dataSource={Footer20DataSource}
+        id="Banner2_1"
+        key="Banner2_1"
+        dataSource={Banner21DataSource}
         isMobile={this.state.isMobile}
       />,
     ];

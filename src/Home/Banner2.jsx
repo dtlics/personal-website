@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from 'antd';
-import { DownOutlined } from '@ant-design/icons';
+import { DownloadOutlined } from '@ant-design/icons';
 import QueueAnim from 'rc-queue-anim';
 import TweenOne, { TweenOneGroup } from 'rc-tween-one';
 import BannerAnim, { Element } from 'rc-banner-anim';
@@ -48,14 +48,14 @@ class Banner extends React.PureComponent {
           <BgElement key="bg" {...bg} id={`bg${i}`} />
           <div {...page}>
             <QueueAnim
-              type={['bottom', 'top']}
+              type={["bottom", "top"]}
               delay={200}
               key="text"
               {...textWrapper}
               id={`wrapperBlock${i}`}
             >
               <div key="logo" {...title}>
-                {typeof title.children === 'string' &&
+                {typeof title.children === "string" &&
                 title.children.match(isImg) ? (
                   <img src={title.children} width="100%" alt="img" />
                 ) : (
@@ -65,7 +65,12 @@ class Banner extends React.PureComponent {
               <div key="content" {...content}>
                 {content.children}
               </div>
-              <Button type="ghost" key="button" {...button}>
+              <Button
+                type="ghost"
+                key="button"
+                icon={<DownloadOutlined />}
+                {...button}
+              >
                 {button.children}
               </Button>
             </QueueAnim>
@@ -85,7 +90,7 @@ class Banner extends React.PureComponent {
             {childrenToRender}
           </BannerAnim>
         </TweenOneGroup>
-        <TweenOne
+        {/* <TweenOne
           animation={{
             y: '-=20',
             yoyo: true,
@@ -97,7 +102,7 @@ class Banner extends React.PureComponent {
           key="icon"
         >
           <DownOutlined />
-        </TweenOne>
+        </TweenOne> */}
       </div>
     );
   }
