@@ -48,14 +48,14 @@ class Banner extends React.PureComponent {
           <BgElement key="bg" {...bg} id={`bg${i}`} />
           <div {...page}>
             <QueueAnim
-              type={["bottom", "top"]}
+              type={['bottom', 'top']}
               delay={200}
               key="text"
               {...textWrapper}
               id={`wrapperBlock${i}`}
             >
               <div key="logo" {...title}>
-                {typeof title.children === "string" &&
+                {typeof title.children === 'string' &&
                 title.children.match(isImg) ? (
                   <img src={title.children} width="100%" alt="img" />
                 ) : (
@@ -65,12 +65,7 @@ class Banner extends React.PureComponent {
               <div key="content" {...content}>
                 {content.children}
               </div>
-              <Button
-                type="ghost"
-                key="button"
-                icon={<DownloadOutlined />}
-                {...button}
-              >
+                <Button type="ghost" key="button" icon={<DownloadOutlined />} shape="round"{...button}>
                 {button.children}
               </Button>
             </QueueAnim>
@@ -101,7 +96,7 @@ class Banner extends React.PureComponent {
           style={{ bottom: 40 }}
           key="icon"
         >
-          <DownOutlined />
+          <load />
         </TweenOne> */}
       </div>
     );

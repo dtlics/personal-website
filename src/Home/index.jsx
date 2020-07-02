@@ -5,7 +5,7 @@ import { enquireScreen } from 'enquire-js';
 
 import Banner2 from './Banner2';
 
-import { Banner21DataSource } from './data.source';
+import { Banner20DataSource } from './data.source';
 import './less/antMotionStyle.less';
 
 let isMobile;
@@ -45,9 +45,9 @@ export default class Home extends React.Component {
   render() {
     const children = [
       <Banner2
-        id="Banner2_1"
-        key="Banner2_1"
-        dataSource={Banner21DataSource}
+        id="Banner2_0"
+        key="Banner2_0"
+        dataSource={Banner20DataSource}
         isMobile={this.state.isMobile}
       />,
     ];
