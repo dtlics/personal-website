@@ -3,12 +3,12 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import { enquireScreen } from 'enquire-js';
 // import Header from './Home/Nav0';
 // import Footer from './Home/Footer0';
-import Home from './Home';
+import Home from './components/Home';
 
 import {
   Nav00DataSource,
   Footer00DataSource,
-} from './Home/data.source.js';
+} from './components/Home/data.source.js';
 
 let isMobile;
 enquireScreen((b) => {
