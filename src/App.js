@@ -2,9 +2,10 @@ import React, { Component, Suspense } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { enquireScreen } from "enquire-js";
 import { Header } from "./components/Header";
-import Footer from "./components/Footer";
 import Home from "./components/Home";
 import Loading from "./components/Loading";
+
+import './App.css';
 
 const NotFound = React.lazy(() => import("./components/NotFound"));
 const Education = React.lazy(() => import("./components/Education"));
@@ -28,21 +29,22 @@ class App extends Component {
     });
   }
   render() {
-    // console.log(this.state.isMobile);
     return (
       <Router>
         <div>
           <Header isMobile={this.state.isMobile} />
-          <Suspense fallback={<Loading />}>
-            <Switch>
-              <Route exact path="/" component={Home} />
-              <Route exact path="/education" component={Education} />
-              <Route exact path="/blog" component={Blog} />
-              <Route exact path="/projects" component={Projects} />
-              <Route exact path="/publications" component={Publications} />
-              <Route component={NotFound}></Route>
-            </Switch>
-          </Suspense>
+          <div className="body-wrapper">
+            <Suspense fallback={<Loading />}>
+              <Switch>
+                <Route exact path="/" component={Home} />
+                <Route exact path="/education" component={Education} />
+                <Route exact path="/blog" component={Blog} />
+                <Route exact path="/projects" component={Projects} />
+                <Route exact path="/publications" component={Publications} />
+                <Route component={NotFound}></Route>
+              </Switch>
+            </Suspense>
+          </div>
         </div>
       </Router>
     );

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { Link, withRouter } from "react-router-dom";
-import { Menu, Button, Tooltip } from "antd";
+import { Link } from "react-router-dom";
+import { Menu, Tooltip, Popover} from "antd";
 import {
   UserOutlined,
   ContainerOutlined,
@@ -81,15 +81,15 @@ export const Header = (props) => {
             </a>
           </Menu.Item>
           <Menu.Item key="contact:3" icon={<WechatOutlined />}>
-            <Tooltip title="ldt05180722">
-              <span>Wechat</span>
-            </Tooltip>
+            <Popover content="ldt05180722" title="WeChatID" placement="left">
+              Wechat
+            </Popover>
           </Menu.Item>
           <Menu.Item key="contact:4" icon={<SkypeOutlined />}>
             <a
               href="https://join.skype.com/invite/g5SngcGe13HJ"
               target="_blank"
-              rel="noopener noreferer"
+              rel="noopener noreferrer"
             >
               Skype
             </a>
