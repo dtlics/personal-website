@@ -1,26 +1,26 @@
 import React from "react";
-import { Result, Button, Row, Col } from "antd";
+import { Row, Col , Timeline} from "antd";
 import { Link } from "react-router-dom";
 
-const NotFound = () => {
+const Education = () => {
   return (
-    <div className="NotFound-wrapper">
+    <div className="home-wrapper">
       <Row type="flex" justify="center">
         <Col xl={21} xs={22}>
-          <Result
-            status="404"
-            title="本页面暂无数据"
-            subTitle="S艹."
-            extra={
-              <Link to="/">
-                <Button type="primary">Back Home</Button>
-              </Link>
-            }
-          />
+          <Timeline mode="left">
+            <Timeline.Item label="2015-09-01">Create a services</Timeline.Item>
+            <Timeline.Item label="2015-09-01 09:12:11">
+              Solve initial network problems
+            </Timeline.Item>
+            <Timeline.Item>Technical testing</Timeline.Item>
+            <Timeline.Item label="2015-09-01 09:12:11">
+              Network problems being solved
+            </Timeline.Item>
+          </Timeline>
         </Col>
       </Row>
     </div>
   );
 };
 
-export default NotFound;
+export default Education;

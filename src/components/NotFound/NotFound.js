@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const NotFound = () => {
   return (
-    <div className="NotFound-wrapper">
+    <div className="home-wrapper">
       <Row type="flex" justify="center">
         <Col xl={21} xs={22}>
           <Result
