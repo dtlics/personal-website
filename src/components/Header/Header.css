@@ -1,6 +1,6 @@
 .header-wrapper {
     width: 100vw !important;
-    position: fixed;
+    position: relative;
     top: 0px;
 
     z-index: 999;
