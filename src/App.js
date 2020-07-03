@@ -1,26 +1,21 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import { enquireScreen } from 'enquire-js';
 import { Header } from './components/Header';
-// import Footer from './Home/Footer0';
+import Footer from './components/Footer';
 import Home from './components/Home';
 
-import {
-  Nav00DataSource,
-  Footer00DataSource,
-} from './components/Home/data.source.js';
-
-let isMobile;
-enquireScreen((b) => {
-  isMobile = b;
-});
+// import {
+//   Nav31DataSource
+//   // Footer00DataSource,
+// } from "./components/NavBar/data.source.js";
 
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      isMobile,
-    };
+    let isMobile;
+    enquireScreen((b) => {isMobile = !!b});
+    this.state = {isMobile};
   }
   componentDidMount() {
     // 适配手机屏幕;
@@ -29,13 +24,12 @@ class App extends Component {
     });
   }
   render() {
+    // console.log(this.state.isMobile);
     return (
       <Router>
         <div>
-          <Header />
-          {/* <Header dataSource={Nav00DataSource} isMobile={this.isMobile} /> */}
+          <Header isMobile={this.state.isMobile} />
           <Route exact path="/" component={Home} />
-          {/* <Footer dataSource={Footer00DataSource} isMobile={this.isMobile} /> */}
         </div>
       </Router>
     );

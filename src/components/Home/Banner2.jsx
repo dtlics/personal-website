@@ -2,7 +2,7 @@ import React from 'react';
 import { Button } from 'antd';
 import { DownloadOutlined } from '@ant-design/icons';
 import QueueAnim from 'rc-queue-anim';
-import TweenOne, { TweenOneGroup } from 'rc-tween-one';
+import { TweenOneGroup } from 'rc-tween-one';
 import BannerAnim, { Element } from 'rc-banner-anim';
 import { isImg } from './utils';
 import 'rc-banner-anim/assets/index.css';
@@ -85,19 +85,6 @@ class Banner extends React.PureComponent {
             {childrenToRender}
           </BannerAnim>
         </TweenOneGroup>
-        {/* <TweenOne
-          animation={{
-            y: '-=20',
-            yoyo: true,
-            repeat: -1,
-            duration: 1000,
-          }}
-          className="banner2-icon"
-          style={{ bottom: 40 }}
-          key="icon"
-        >
-          <load />
-        </TweenOne> */}
       </div>
     );
   }

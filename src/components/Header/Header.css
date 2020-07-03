@@ -1,0 +1,40 @@
+.header-wrapper {
+    width: 100vw !important;
+    position: fixed;
+    top: 0px;
+
+    z-index: 999;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    background-color: white;
+    border-bottom: solid 1px rgb(232, 232, 232);
+}
+
+.header-logo {
+    margin-top: 12px;
+    margin-bottom: 0px;
+    margin-left: 1em;
+    margin-right: 0em;
+
+    vertical-align: middle;
+
+    flex-shrink: 0;
+    font-size: 18px;
+    color: #00a885;
+    text-decoration: none !important;
+
+    flex-grow: 1;
+    flex-shrink: 99999;
+}
+
+.header-menu {
+    /* flex-shrink: 0; */
+    margin-bottom: 0px;
+    margin-top: 10px;
+    margin-right: 1em;
+    border-bottom: none;
+    white-space: inherit;
+}

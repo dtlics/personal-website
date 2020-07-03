@@ -1,4 +1,3 @@
-import React from 'react';
 export const Banner20DataSource = {
   wrapper: { className: 'banner2' },
   BannerAnim: {
