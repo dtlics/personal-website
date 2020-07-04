@@ -80,7 +80,7 @@ const Education = () => {
             color = colorTable[data.grade];
           }
           return data.link ? (
-            <a href={data.link} target="_blank" rel="noopener noreferrer">
+            <a href={data.link} target="_blank" rel="noopener noreferrer" style={{color: 'black'}}>
               <Tooltip title={data.grade + ": " + data.courseName}>
                 <Card.Grid
                   key={i}

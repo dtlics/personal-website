@@ -101,7 +101,8 @@ export const transcriptData = [
            grade: "A+",
            courseName: "JAVA & OOP",
            isPostGrad: false,
-           link: "",
+           link:
+             "https://www.cs.hku.hk/index.php/programmes/course-offered?infile=2019/comp2396.html",
          },
          {
            courseCode: "MATH 2101",
