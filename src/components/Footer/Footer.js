@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div className="footer-wrapper">
       <p className="footer-content">
-        Dantong Li
+        Copyright @ Dantong Li 2020
       </p>
     </div>
   );

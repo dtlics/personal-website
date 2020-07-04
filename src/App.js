@@ -2,6 +2,7 @@ import React, { Component, Suspense } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { enquireScreen } from "enquire-js";
 import { Header } from "./components/Header";
+import Footer from './components/Footer';
 import Home from "./components/Home";
 import Loading from "./components/Loading";
 
@@ -45,6 +46,7 @@ class App extends Component {
               </Switch>
             </Suspense>
           </div>
+          <Footer />
         </div>
       </Router>
     );
