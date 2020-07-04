@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { Menu, Tooltip, Popover} from "antd";
+import { Menu, Tooltip } from "antd";
 import {
   UserOutlined,
   ContainerOutlined,
@@ -28,38 +28,40 @@ export const Header = (props) => {
 
   return (
     <div className="header-wrapper">
-      <Link className="header-logo" to="/" onClick={() => {setCurrent('')}}>
+      <Link
+        className="header-logo"
+        to="/"
+        onClick={() => {
+          setCurrent("About Me");
+        }}
+      >
         <img
           src="https://personal-dantong.s3.amazonaws.com/signature.png"
           alt="img"
           height="36px"
         ></img>
       </Link>
-      <Menu onClick={handleClick} selectedKeys={[current]} mode="horizontal" className="header-menu">
+
+      <Menu
+        onClick={handleClick}
+        selectedKeys={[current]}
+        mode="horizontal"
+        className="header-menu"
+      >
         <Menu.Item key="About Me" icon={<UserOutlined />}>
-          <Link to="/">
-          About Me
-          </Link>
+          <Link to="/">About Me</Link>
         </Menu.Item>
         <Menu.Item key="Education" icon={<ContainerOutlined />}>
-          <Link to="/education">
-          Education
-          </Link>
+          <Link to="/education">Education</Link>
         </Menu.Item>
         <Menu.Item key="Blog" icon={<NotificationOutlined />}>
-          <Link to='/blog'>
-          Blog
-          </Link>
+          <Link to="/blog">Blog</Link>
         </Menu.Item>
         <Menu.Item key="Projects" icon={<RobotOutlined />}>
-          <Link to="/projects">
-          Projects
-          </Link>
+          <Link to="/projects">Projects</Link>
         </Menu.Item>
         <Menu.Item key="Publications" icon={<BookOutlined />}>
-          <Link to="/publications">
-          Publications
-          </Link>
+          <Link to="/publications">Publications</Link>
         </Menu.Item>
         <Menu.SubMenu icon={<IdcardOutlined />} title="Contact">
           <Menu.Item key="contact:1" icon={<MailOutlined />}>
@@ -81,9 +83,12 @@ export const Header = (props) => {
             </a>
           </Menu.Item>
           <Menu.Item key="contact:3" icon={<WechatOutlined />}>
-            <Popover content="ldt05180722" title="WeChatID" placement="left">
+            <Tooltip
+              title="ldt05180722"
+              autoAdjustOverflow
+            >
               Wechat
-            </Popover>
+            </Tooltip>
           </Menu.Item>
           <Menu.Item key="contact:4" icon={<SkypeOutlined />}>
             <a

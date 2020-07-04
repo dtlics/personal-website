@@ -7,7 +7,7 @@
 
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
 
     background-color: white;
     border-bottom: solid 1px rgb(232, 232, 232);
@@ -21,17 +21,15 @@
 
     vertical-align: middle;
 
+    flex-grow: 1;
     flex-shrink: 0;
     font-size: 18px;
     color: #00a885;
     text-decoration: none !important;
-
-    flex-grow: 1;
-    flex-shrink: 99999;
 }
 
 .header-menu {
-    /* flex-shrink: 0; */
+    flex-basis: 723px;
     margin-bottom: 0px;
     margin-top: 10px;
     margin-right: 1em;

@@ -1,8 +1,8 @@
 import React from "react";
-import { Row, Col, Timeline, Card, Tooltip, Tag, Divider} from "antd";
+import { Row, Col, Timeline, Card, Tooltip, Tag, Divider } from "antd";
 import { ClockCircleOutlined } from "@ant-design/icons";
 import { Link } from "react-router-dom";
-import { transcriptData } from './hkuTranscriptData';
+import { transcriptData } from "./hkuTranscriptData";
 
 import "./Education.css";
 
@@ -11,15 +11,15 @@ const colorTable = {
   A: "#98805D",
   "A-": "#B19E81",
   "B+": "#C1B19A",
-  "Pass": "#D0C4B3",
-  postGrad: "#4C412F"
+  Pass: "#D0C4B3",
+  postGrad: "#4C412F",
 };
 
 const Education = () => {
-    const gridStyle = {
-      width: "25%",
-      textAlign: "center",
-    };
+  const gridStyle = {
+    width: "25%",
+    textAlign: "center",
+  };
   return (
     <div className="home-wrapper education" style={{ marginTop: "2em" }}>
       <Card title="Education Timeline" headStyle={{ color: "#7f6b4e" }}>
@@ -79,7 +79,18 @@ const Education = () => {
           } else {
             color = colorTable[data.grade];
           }
-          return (
+          return data.link ? (
+            <a href={data.link} target="_blank" rel="noopener noreferrer">
+              <Tooltip title={data.grade + ": " + data.courseName}>
+                <Card.Grid
+                  key={i}
+                  style={{ backgroundColor: color, ...gridStyle }}
+                >
+                  {data.courseCode}
+                </Card.Grid>
+              </Tooltip>
+            </a>
+          ) : (
             <Tooltip title={data.grade + ": " + data.courseName}>
               <Card.Grid
                 key={i}
