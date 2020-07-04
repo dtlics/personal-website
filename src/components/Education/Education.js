@@ -61,6 +61,11 @@ const Education = () => {
       </Card>
 
       <Card title="HKU Transcript:" headStyle={{ color: "#7f6b4e" }}>
+        <Row type="flex" justify="left" gutter={[0, 10]}>
+          <Col xl={21} xs={22}>
+            <Tag color="success">cGPA: 4.05/4.30</Tag>
+          </Col>
+        </Row>
         <Row type="flex" justify="left">
           <Col xl={21} xs={22}>
             <Tag color="#4C412F">PostGrad Course</Tag>
@@ -80,7 +85,12 @@ const Education = () => {
             color = colorTable[data.grade];
           }
           return data.link ? (
-            <a href={data.link} target="_blank" rel="noopener noreferrer" style={{color: 'black'}}>
+            <a
+              href={data.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: "black" }}
+            >
               <Tooltip title={data.grade + ": " + data.courseName}>
                 <Card.Grid
                   key={i}
