@@ -32,7 +32,7 @@ const Education = () => {
               <Timeline.Item label="2018-09-01">
                 The University of Hong Kong
               </Timeline.Item>
-              <Timeline.Item label="2019-10-01">
+              <Timeline.Item label="2018-10-01">
                 Being a Co-Executive Member of{" "}
                 <a
                   href="https://richku.com"
