@@ -1,7 +1,6 @@
 import React from "react";
 import { Row, Col, Timeline, Card, Tooltip, Tag, Divider } from "antd";
 import { ClockCircleOutlined } from "@ant-design/icons";
-import { Link } from "react-router-dom";
 import { transcriptData } from "./hkuTranscriptData";
 
 import "./Education.css";

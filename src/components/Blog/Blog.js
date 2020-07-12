@@ -1,22 +1,36 @@
 import React from "react";
-import { Result, Button, Row, Col } from "antd";
-import { Link } from "react-router-dom";
+import { Row, Col, Comment, Tooltip, Avatar } from "antd";
+import moment from "moment";
+import { blogData } from "./blogData";
 
 const Blog = () => {
   return (
     <div className="home-wrapper">
       <Row type="flex" justify="center">
         <Col xl={21} xs={22}>
-          <Result
-            status="404"
-            title="No Data Available"
-            subTitle="The page will be updated ASAP."
-            extra={
-              <Link to="/">
-                <Button type="primary">Back Home</Button>
-              </Link>
-            }
-          />
+          {blogData.map((data, i) => {
+            return (
+              <Comment
+                // actions={actions}
+                key={i}
+                author={<span style={{ color: "#7f6b4e" }}>Dantong Li</span>}
+                avatar={
+                  <Avatar
+                    src="https://personal-dantong.s3.amazonaws.com/avatar.jpeg"
+                    alt="Dantong Li"
+                  />
+                }
+                content={<p>{data.content}</p>}
+                datetime={
+                  <Tooltip title={data.time}>
+                    <span>
+                      {moment(data.time, "YYYY-MM-DD HH:mm").fromNow()}
+                    </span>
+                  </Tooltip>
+                }
+              />
+            );
+          })}
         </Col>
       </Row>
     </div>
