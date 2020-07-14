@@ -11,6 +11,9 @@ export const blogData = [
          {
            content: "Just found out there's a huge repo for exercises about RL talored to the David Silver's RL course. Life sucks... Anyway, I'm pretty happy that I did know how to study RL afterall. I tried to look for exercises/tutorials to learn better, and it turns out that I'm right to do so. (Since there a whole repo for this) Cool, let me get to it right away, lol.",
            time: "2020-07-12 20:34"
-
+         }
+         {
+           content: "Ahhh Just quitted on my game design project. It really sucks. Anyway, hopefully the time saved by doing this will finally pay off.",
+           time: "2020-07-15 01:11"
          }
        ];
