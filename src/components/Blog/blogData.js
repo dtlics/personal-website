@@ -15,5 +15,9 @@ export const blogData = [
          {
            content: "Ahhh Just quitted on my game design project. It really sucks. Anyway, hopefully the time saved by doing this will finally pay off.",
            time: "2020-07-15 01:11"
+         },
+         {
+           content: "Year 3 course selection began today, but I just found loads of time clashes among the courses I dream to take. Though heart-broken, there's still hope, lol. So let me write the courses that I'm going to learn by myself down for my future reference. \n MATH3301 Algebra 1\n MATH3401 Analysis 1\n MATH3541 Topology\n MATH3601 Numerical Analysis\n MATH3901 Operation Research\n MATH3904 Optimization\n MATH4302 Algebra 2\n STAT3600 Linear Statistical Analysis\n STAT3603 Stochastic Processes",
+           time: "2020-07-27 17:36"
          }
        ];
