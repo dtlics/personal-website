@@ -21,10 +21,17 @@ export const blogData = [
   {
     content:
       <span>
-        Year 3 course selection began today, but I just found loads of time clashes among the courses I dream to take. Though heart-broken, there's still hope, lol. So let me write the courses that I'm going to learn by myself down for my future reference. \n\
-        MATH3301 Algebra 1: Relatively easy, but is very fundamental. What some structures are and their easy propertities.\n \
-        MATH3401 Analysis 1\n MATH3541 Topology\n MATH3601 Numerical Analysis\n MATH3901 Operation Research\n MATH3904 Optimization\n MATH4302 Algebra 2\n STAT3600 Linear Statistical Analysis\n STAT3603 Stochastic Processes
-           </span>,
+        <p>Year 3 course selection began today, but I just found loads of time clashes among the courses I dream to take. Though heart-broken, there's still hope, lol. So let me write the courses that I'm going to learn by myself down for my future reference.</p>
+        <p>MATH3301 Algebra 1: Relatively easy, but is very fundamental. What some structures (group, ring, field) are and their easy propertities.</p>
+        <p>MATH4302 Algebra 2: More interesting. Part A: What is PID and UFD; Part B: Field Theory, domain extension and Galois Theory; Part C: Module Theory (Based on PID) -- "Best course in HKU"(Ning, 2019)</p>
+        <p>MATH3401 Analysis 1: More familiar. Metric Topology. The basis for analytics. A generalization of MATH2241 but 2241 is not a necessity. Useful in understanding CS problems systemetically, especially when dealing with computational geometry stuff.</p>
+        <p>MATH3541 Topology: Point Set Topology (which can be regarded as a generalization of Metric Topology) with some Algebraic Topology (Including Fundamental Group and Covering Space). Important course and very fundamental. It needs a bit of abstract algebra so it's best to ocnsider it after taking Algebra 1 and Analysis 1. TCS also needs topology, especially if my research interest is computational geometry.</p>
+        <p>MATH3901 Operations Research 1: Very useful. LP and SDP are very important and are everywhere. "But avoid Xiaoming Yuan since he's course might be a bit awful"(Ning, 2019)</p>
+        <p>MATH3601 Numerical Analysis</p>
+        <p>MATH3904 Optimization</p>
+        <p>STAT3600 Linear Statistical Analysis</p>
+        <p>STAT3603 Stochastic Processes</p>
+      </span>,
     time: "2020-07-27 17:36"
   }
 ];
