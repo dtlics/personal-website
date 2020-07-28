@@ -29,7 +29,7 @@ export const blogData = [
         <p><a href="https://webapp.science.hku.hk/sr4/servlet/enquiry?Type=Course&course_code=MATH4302"
           target="_blank"
           rel="noopener noreferrer"
-          style={{ fontWeight: "bold" }}>MATH4302 Algebra 2: </a>More interesting. Part A: What is PID and UFD; Part B: Field Theory, domain extension and Galois Theory; Part C: Module Theory (Based on PID) -- "Best course in HKU"(Ning, 2019)</p>
+          style={{ fontWeight: "bold" }}>MATH4302 Algebra 2: </a>More interesting. Part A: What is PID and UFD; Part B: Field Theory, domain extension and Galois Theory; Part C: Module Theory (Based on PID) -- "Best course in HKU"(Gao, 2019)</p>
         <p><a href="https://webapp.science.hku.hk/sr4/servlet/enquiry?Type=Course&course_code=MATH3401"
           target="_blank"
           rel="noopener noreferrer"
@@ -41,7 +41,7 @@ export const blogData = [
         <p><a href="https://webapp.science.hku.hk/sr4/servlet/enquiry?Type=Course&course_code=MATH3901"
           target="_blank"
           rel="noopener noreferrer"
-          style={{ fontWeight: "bold" }}>MATH3901 Operations Research 1: </a>Very useful. LP and SDP are very important and are everywhere. "But avoid Xiaoming Yuan since he's course might be a bit awful"(Ning, 2019)</p>
+          style={{ fontWeight: "bold" }}>MATH3901 Operations Research 1: </a>Very useful. LP and SDP are very important and are everywhere. "But avoid Xiaoming Yuan since he's course might be a bit awful"(Gao, 2019)</p>
         <p><a href="https://webapp.science.hku.hk/sr4/servlet/enquiry?Type=Course&course_code=MATH3601"
           target="_blank"
           rel="noopener noreferrer"
@@ -51,7 +51,7 @@ export const blogData = [
           rel="noopener noreferrer"
           style={{ fontWeight: "bold" }}>MATH3904 Optimization: </a>Oversea univerisities like to teach convex optimization so that we can solve problems, while HKU likes to teach it in a more theoretical way. <a href="http://web.stanford.edu/~boyd/"
             target="_blank"
-            rel="noopener noreferrer">Stephen Boyd's</a> lectures and textbook are very helpful. (364a, 364b)(Yao, 2020)</p>
+            rel="noopener noreferrer">Stephen Boyd's</a> lectures and textbook are very helpful. (364a, 364b)(Zhang, 2020)</p>
         <p><a href="https://webapp.science.hku.hk/sr4/servlet/enquiry?Type=Course&course_code=STAT3600"
           target="_blank"
           rel="noopener noreferrer"
@@ -65,7 +65,7 @@ export const blogData = [
   },
   {
     content: (<span>
-      Just had a talk with Jiayao, and here are the postgrad courses important:
+      Just had a talk with JiaZhang, and here are the postgrad courses important:
       <p><a href="https://webapp.science.hku.hk/sr4/servlet/enquiry?Type=Course&course_code=MATH7505"
         target="_blank"
         rel="noopener noreferrer"
@@ -89,7 +89,7 @@ export const blogData = [
         rel="noopener noreferrer"
         style={{ fontWeight: "bold" }}>STAT7611 Computational statistics: </a>Lectures can be found <a href="https://drive.google.com/drive/folders/1allya-g0uSYB-oGnN9z-z0jeyTTUEzkI?usp=sharing"
           target="_blank"
-          rel="noopener noreferrer">here</a>. Very useful and it's like a high level introductory for methods used in statistical research. However, it requires extra learning from other textbooks or papers to fully understand the content. "But Prof.Yin doesn't fully master all the things he teach in that course" (Yao, 2020)</p>
+          rel="noopener noreferrer">here</a>. Very useful and it's like a high level introductory for methods used in statistical research. However, it requires extra learning from other textbooks or papers to fully understand the content. "But Prof.Yin doesn't fully master all the things he teach in that course" (Zhang, 2020)</p>
     </span>),
     time: "2020-07-28 11:57"
   }
