@@ -49,7 +49,9 @@ export const blogData = [
         <p><a href="https://webapp.science.hku.hk/sr4/servlet/enquiry?Type=Course&course_code=MATH3904"
           target="_blank"
           rel="noopener noreferrer"
-          style={{ fontWeight: "bold" }}>MATH3904 Optimization</a></p>
+          style={{ fontWeight: "bold" }}>MATH3904 Optimization: </a>Oversea univerisities like to teach convex optimization so that we can solve problems, while HKU likes to teach it in a more theoretical way. <a href="http://web.stanford.edu/~boyd/"
+            target="_blank"
+            rel="noopener noreferrer">Stephen Boyd's</a> lectures and textbook are very helpful. (364a, 364b)(Yao, 2020)</p>
         <p><a href="https://webapp.science.hku.hk/sr4/servlet/enquiry?Type=Course&course_code=STAT3600"
           target="_blank"
           rel="noopener noreferrer"
@@ -60,5 +62,31 @@ export const blogData = [
           style={{ fontWeight: "bold" }}>STAT3603 Stochastic Processes</a></p>
       </span>,
     time: "2020-07-27 17:36"
+  },
+  {
+    content: (<span>
+      Just had a talk with Jiayao, and here are the postgrad courses important:
+      <p><a href="https://webapp.science.hku.hk/sr4/servlet/enquiry?Type=Course&course_code=MATT7505"
+        target="_blank"
+        rel="noopener noreferrer">MATH7505 Real Analysis: </a>Recommended textbook: Royden 3rd Ed.</p>
+      <p><a href="https://webapp.science.hku.hk/sr4/servlet/enquiry?Type=Course&course_code=STAT7609"
+        target="_blank"
+        rel="noopener noreferrer">STAT7609 Research methods in statistics: </a>Kind of classical, like computing the distribution of a order statistic, lecture notes are <a href="https://drive.google.com/drive/folders/1V3jF8i-OHKwkyKEvVllDGE1vwRpJP67h?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer">here</a></p>
+      <p><a href="https://webapp.science.hku.hk/sr4/servlet/enquiry?Type=Course&course_code=STAT7610"
+        target="_blank"
+        rel="noopener noreferrer">STAT7610 Advanced probability: </a>It includes measure theory and it provides introductory explanation of it. But it's quite confusing if I've never learned measure theory from a analysis point of view. It's better to have a taste of it using <a href="https://services.math.duke.edu/~rtd/"
+          target="_blank"
+          rel="noopener noreferrer">this author</a>'s <a href="https://services.math.duke.edu/~rtd/PTE/pte.html"
+            target="_blank"
+            rel="noopener noreferrer">Probability: Theory and Examples. 5th Edition</a> and try its exercises out before deciding to take it.</p>
+      <p><a href="https://webapp.science.hku.hk/sr4/servlet/enquiry?Type=Course&course_code=STAT7611"
+        target="_blank"
+        rel="noopener noreferrer">STAT7611 Computational statistics: </a>Lectures can be found <a href="https://drive.google.com/drive/folders/1allya-g0uSYB-oGnN9z-z0jeyTTUEzkI?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer">here</a>. Very useful and it's like a high level introductory for methods used in statistical research. However, it requires extra learning from other textbooks or papers to fully understand the content. "But Prof.Yin doesn't fully master all the things he teach in that course" (Yao, 2020)</p>
+    </span>),
+    time: "2020-07-28 11:57"
   }
 ];
