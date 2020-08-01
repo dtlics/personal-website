@@ -17,5 +17,9 @@ export const blogData = [
   {
     content: "Ahhh Just quitted on my game design project. It really sucks. Anyway, hopefully the time saved by doing this will finally pay off.",
     time: "2020-07-15 01:11"
+  },
+  {
+    content: "Experience with Methematica: Have to find a way to optimize over complex matrices... Right now, Maximize can optimize over Real matrices rather than complex ones; but NMaximize always finds that a matrix to be not square, which is so wierd... ",
+    time: "2020-08-02 01:46"
   }
 ];
